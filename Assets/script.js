@@ -2,6 +2,7 @@ const itemForm = document.getElementById('item-form');
 const inputField = document.getElementById('input-field');
 const itemList = document.getElementById('item-list');
 const clear = document.getElementById('clear-button');
+const filter = document.getElementById('filter-field');
 
 // Event functions
 function addItem (e) {
@@ -27,20 +28,42 @@ function addItem (e) {
     }
     else
         alert("Enter item");
+    
+        checkUI();
 }
 
 function clearList(e) {
     while (itemList.firstChild) {
         itemList.removeChild(itemList.firstChild)
     }
+    checkUI();
 }
 
 function removeItem(e) {
     if (e.target.classList.contains('delete-button') ) {
         // Need to target the x but delete the list item
-        // How do we select the item then
-        // 1. Go to the parent element (in this case an li, and remove the element)
-        e.target.parentElement.remove()
+        // How do we select the item then?
+            // Go to the parent element (in this case an li, and remove the element)
+        
+        if (confirm ('Are you sure')) {
+            e.target.parentElement.parentElement.remove();
+            checkUI();
+        }
+    }
+}
+
+function checkUI(e) {
+    // A function that checks if the the list is populated or not
+    console.log("Checked")
+    items = itemList.querySelectorAll('li');
+    if (items.length === 0) {
+        clear.style.display ='none';
+        filter.style.display ='none';
+    }
+
+    else {
+        clear.style.display ='block';
+        filter.style.display ='block';
     }
 }
 
@@ -54,3 +77,5 @@ clear.addEventListener('click', clearList);
 
 // 3: Removing an item from the list (Using Event Delegation)
 itemList.addEventListener('click', removeItem);
+
+checkUI();
