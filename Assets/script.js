@@ -2,8 +2,6 @@ const itemForm = document.getElementById('item-form');
 const inputField = document.getElementById('input-field');
 const itemList = document.getElementById('item-list');
 const clear = document.getElementById('clear-button');
-const deleteButton = document.getElementByClassName('delete-button');
-
 
 // Event functions
 
@@ -39,7 +37,13 @@ function clearList(e) {
 }
 
 function removeItem(e) {
-    e.removeItem(e.current);
+    if (e.target.classList.contains('delete-button') ) {
+        // Need to target the x but delete the list item
+        // How do we select the item then
+        // 1. Go to the parent element (in this case an li, and remove the element)
+        console.log(e.target.parentElement)
+        e.target.parentElement.remove()
+    }
 }
 
 
@@ -51,7 +55,7 @@ itemForm.addEventListener('submit', addItem);
 // 2: Removing all items from the list
 clear.addEventListener('click', clearList);
 
-// 3: Removing an item from the list
-deleteButton.addEventListener('click', removeItem);
+// 3: Removing an item from the list (Using Event Delegation)
+itemList.addEventListener('click', removeItem);
 
 
