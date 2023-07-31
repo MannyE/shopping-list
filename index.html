@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/styles.css">
+    <script src = "Assets/script.js" defer></script>
+    <title>Shopping List</title>
+</head>
+<body>
+    <div class="header">
+        <img src="Assets/Images/note.png" alt="Image of todo list">
+        <h1>Shopping List</h1>
+    </div>
+
+    <div class="form" id="item-form">
+        <form>
+            <input type="text" name="input-field" id="input-field" placeholder="Enter Item">
+            <button id = "add-button">+ Add Item</button>
+            <input type="text" name="filter-field" id="filter-field" placeholder="Filter Items">
+        </form>
+
+        <ul id = "item-list">
+            <li>
+                <div class="item">
+                    <p>Apples</p>
+                    <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtNTMzLWljb24tMDU2LnBuZw.png" alt="x symbol to delete items" class="delete-button">
+                </div>
+            </li>
+
+            <li>
+                <div class="item">
+                    <p>Orange Juice</p>
+                    <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtNTMzLWljb24tMDU2LnBuZw.png" alt="x symbol to delete items" class="delete-button">
+                </div>
+            </li>
+
+            <li>
+                <div class="item">
+                    <p>Oreos</p>
+                    <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtNTMzLWljb24tMDU2LnBuZw.png" alt="x symbol to delete items" class="delete-button">
+                </div>
+            </li>
+
+            <li>
+                <div class="item">
+                    <p>Milk</p>
+                    <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtNTMzLWljb24tMDU2LnBuZw.png" alt="x symbol to delete items" class="delete-button">
+                </div>
+            </li>
+        </ul>
+        <button id = "clear-button">+ Clear All</button>
+    </div>
+    
+</body>
+</html>
