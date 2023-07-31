@@ -4,7 +4,6 @@ const itemList = document.getElementById('item-list');
 const clear = document.getElementById('clear-button');
 
 // Event functions
-
 function addItem (e) {
     e.preventDefault();
 
@@ -16,7 +15,6 @@ function addItem (e) {
         const img = document.createElement('img');
         img.classList.add("delete-button");
         img.src = 'https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtNTMzLWljb24tMDU2LnBuZw.png';
-        
         
         const pContent = document.createTextNode(e.target[0].value);
         p.append(pContent);
@@ -32,8 +30,9 @@ function addItem (e) {
 }
 
 function clearList(e) {
-    e.preventDefault();
-    itemList.innerHTML = '';
+    while (itemList.firstChild) {
+        itemList.removeChild(itemList.firstChild)
+    }
 }
 
 function removeItem(e) {
@@ -41,11 +40,9 @@ function removeItem(e) {
         // Need to target the x but delete the list item
         // How do we select the item then
         // 1. Go to the parent element (in this case an li, and remove the element)
-        console.log(e.target.parentElement)
         e.target.parentElement.remove()
     }
 }
-
 
 // Event Listeners
 
@@ -57,5 +54,3 @@ clear.addEventListener('click', clearList);
 
 // 3: Removing an item from the list (Using Event Delegation)
 itemList.addEventListener('click', removeItem);
-
-
