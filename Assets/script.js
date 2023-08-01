@@ -55,7 +55,7 @@ function removeItem(e) {
 function checkUI(e) {
     // A function that checks if the the list is populated or not
     console.log("Checked")
-    items = itemList.querySelectorAll('li');
+    let items = itemList.querySelectorAll('li');
     if (items.length === 0) {
         clear.style.display ='none';
         filter.style.display ='none';
