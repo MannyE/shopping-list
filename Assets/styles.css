@@ -7,6 +7,8 @@
     font-family: 'Poppins', 'Helvetica Neue', sans-serif;
 }
 
+@media screen  and (max-width: 480px) {
+    
 h1 {
     font-weight: 400;
     margin-left: 2vw;
@@ -33,18 +35,20 @@ h1 {
 }
 
 #input-field, #filter-field, li div{
-    height: 3vh;
+
     width: 100%;
     padding: 4vw 2vw;
 }
 
 #input-field {
+    height: 10vw;
     border: 1px solid gray;
     border-radius: 2vw;
     background-color: white;
 }
 
 #filter-field {
+    height: 10vw;
     outline: 0;
     border: none;
     border-bottom: 1px solid gray;
@@ -76,7 +80,7 @@ li p {
 }
 
 .delete-button {
-    width: 2.5vw;
+    width: 4vw;
     display: hidden;
 }
 
@@ -85,4 +89,6 @@ li p {
     border-radius: 1vw;
     padding: 2%;
     width: 90vw;
+    height: 12vw;
+}
 }
