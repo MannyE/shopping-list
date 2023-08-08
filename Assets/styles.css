@@ -9,86 +9,181 @@
 
 @media screen  and (max-width: 480px) {
     
-h1 {
-    font-weight: 400;
-    margin-left: 2vw;
+    h1 {
+        font-weight: 400;
+        margin-left: 2vw;
+    }
+
+    .header, .form {
+        width: 90vw;
+        margin:auto;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 4%;
+        margin-top: 4vw;
+        margin-bottom: 4%;
+    }
+
+    #input-field, #add-button, #filter-field, li div{
+        display: block;
+        margin-bottom: 4vw; 
+        box-sizing: border-box;
+    }
+
+    #input-field, #filter-field, li div{
+
+        width: 100%;
+        padding: 4vw 2vw;
+    }
+
+    #input-field {
+        height: 10vw;
+        border: 1px solid gray;
+        border-radius: 2vw;
+        background-color: white;
+    }
+
+    #filter-field {
+        height: 10vw;
+        outline: 0;
+        border: none;
+        border-bottom: 1px solid gray;
+    }
+
+    #add-button {
+        color: white;
+        background-color: black;
+        padding: 8px 20px;
+        border-radius: .5vh;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .item{
+        border: 1px gray solid;
+        border-radius: 2vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    li p {
+        font-weight: 700;
+    }
+
+    .delete-button {
+        width: 4vw;
+        display: hidden;
+    }
+
+    #clear-button { 
+        border: 1px solid gray;
+        border-radius: 1vw;
+        padding: 2%;
+        width: 90vw;
+        height: 12vw;
+    }
 }
 
-.header, .form {
-    width: 90vw;
-    margin:auto;
-}
 
-.header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-top: 4%;
-    margin-top: 4vw;
-    margin-bottom: 4%;
-}
+@media screen and (min-width: 481px) and (max-width:1024px) {
+    body {
+        font-size: 5vw;
+        box-sizing: border-box;
+    }
 
-#input-field, #add-button, #filter-field, li div{
-    display: block;
-    margin-bottom: 4vw; 
-    box-sizing: border-box;
-}
+    h1 {
+        font-weight: 400;
+        font-size: 10vw;
+    }
 
-#input-field, #filter-field, li div{
+    .header, .form {
+        width: 80vw;
+        margin:auto;
+    }
 
-    width: 100%;
-    padding: 4vw 2vw;
-}
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 9vw;
+        margin-bottom: 4%;
+    }
 
-#input-field {
-    height: 10vw;
-    border: 1px solid gray;
-    border-radius: 2vw;
-    background-color: white;
-}
+    #input-field, #add-button, #filter-field, li div{
+        display: block;
+        margin-bottom: 4vw; 
+        box-sizing: border-box;
+    }
 
-#filter-field {
-    height: 10vw;
-    outline: 0;
-    border: none;
-    border-bottom: 1px solid gray;
-}
+    #input-field, #filter-field{
+        width: 100%;
+        padding: 4vw 2vw;
+    }
 
-#add-button {
-    color: white;
-    background-color: black;
-    padding: 8px 20px;
-    border-radius: .5vh;
-}
+    #input-field {
+        height: 10vw;
+        border: 1px solid gray;
+        border-radius: 2vw;
+        background-color: white;
+        font-size: 3.5vw;
+    }
 
-li {
-    list-style: none;
-}
+    #filter-field {
+        height: 10vw;
+        outline: 0;
+        border: none;
+        border-bottom: 1px solid gray;
+        font-size: 3vw;
+    }
 
-.item{
-    border: 1px gray solid;
-    border-radius: 2vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
-}
+    #add-button {
+        color: white;
+        background-color: black;
+        padding: 8px 20px;
+        border-radius: .5vh;
+        font-size: 3vw;
+    }
 
-li p {
-    font-weight: 700;
-}
+    li {
+        list-style: none;
+    }
 
-.delete-button {
-    width: 4vw;
-    display: hidden;
-}
+    .item{
+        box-sizing: border-box;
+        height: 10vw;
+        padding: 3vw 2vw;
+        border: 1px gray solid;
+        border-radius: 2vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 500;
+        font-size: 3vw;
+    }
 
-#clear-button { 
-    border: 1px solid gray;
-    border-radius: 1vw;
-    padding: 2%;
-    width: 90vw;
-    height: 12vw;
-}
+    .delete-button {
+        width: 4vw;
+        display: hidden;
+    }
+
+    #clear-button { 
+        border: 1px solid gray;
+        border-radius: 1vw;
+        padding: 1vw 2vw;
+        font-size: 4vw;
+        width: 80vw;
+        margin-bottom: 8vw;
+    }
 }
