@@ -1,286 +1,304 @@
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    background-color: whitesmoke;
-    font-family: 'Poppins', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  font-family: "Poppins", "Helvetica Neue", sans-serif;
 }
 
-@media screen  and (max-width: 480px) {
-    
-    h1 {
-        font-weight: 400;
-        margin-left: 2vw;
-    }
+@media screen and (max-width: 480px) {
+  h1 {
+    font-weight: 400;
+    margin-left: 2vw;
+  }
 
-    .header, .form {
-        width: 90vw;
-        margin:auto;
-    }
+  .header,
+  .form {
+    width: 90vw;
+    margin: auto;
+  }
 
-    .header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding-top: 4%;
-        margin-top: 4vw;
-        margin-bottom: 4%;
-    }
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 4%;
+    margin-top: 4vw;
+    margin-bottom: 4%;
+  }
 
-    #input-field, #add-button, #filter-field, li div{
-        display: block;
-        margin-bottom: 4vw; 
-        box-sizing: border-box;
-    }
+  #input-field,
+  #add-button,
+  #filter-field,
+  li div {
+    display: block;
+    margin-bottom: 4vw;
+    box-sizing: border-box;
+  }
 
-    #input-field, #filter-field, li div{
+  #input-field,
+  #filter-field,
+  li div {
+    width: 100%;
+    padding: 4vw 2vw;
+  }
 
-        width: 100%;
-        padding: 4vw 2vw;
-    }
+  #input-field {
+    height: 10vw;
+    border: 1px solid gray;
+    border-radius: 2vw;
+    background-color: white;
+  }
 
-    #input-field {
-        height: 10vw;
-        border: 1px solid gray;
-        border-radius: 2vw;
-        background-color: white;
-    }
+  #filter-field {
+    height: 10vw;
+    outline: 0;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
 
-    #filter-field {
-        height: 10vw;
-        outline: 0;
-        border: none;
-        border-bottom: 1px solid gray;
-    }
+  #add-button {
+    color: white;
+    background-color: black;
+    padding: 8px 20px;
+    border-radius: 0.5vh;
+  }
 
-    #add-button {
-        color: white;
-        background-color: black;
-        padding: 8px 20px;
-        border-radius: .5vh;
-    }
+  li {
+    list-style: none;
+  }
 
-    li {
-        list-style: none;
-    }
+  .item {
+    border: 1px gray solid;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
 
-    .item{
-        border: 1px gray solid;
-        border-radius: 2vw;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        box-sizing: border-box;
-    }
+  li p {
+    font-weight: 700;
+  }
 
-    li p {
-        font-weight: 700;
-    }
+  .delete-button {
+    width: 4vw;
+    display: hidden;
+  }
 
-    .delete-button {
-        width: 4vw;
-        display: hidden;
-    }
-
-    #clear-button { 
-        border: 1px solid gray;
-        border-radius: 1vw;
-        padding: 2%;
-        width: 90vw;
-        height: 12vw;
-    }
+  #clear-button {
+    border: 1px solid gray;
+    border-radius: 1vw;
+    padding: 2%;
+    width: 90vw;
+    height: 12vw;
+  }
 }
 
-@media screen and (min-width: 481px) and (max-width:1023px) {
-    body {
-        font-size: 5vw;
-        box-sizing: border-box;
-    }
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+  body {
+    font-size: 5vw;
+    box-sizing: border-box;
+  }
 
-    h1 {
-        font-weight: 400;
-        font-size: 10vw;
-    }
+  h1 {
+    font-weight: 400;
+    font-size: 10vw;
+  }
 
-    .header, .form {
-        width: 80vw;
-        margin:auto;
-    }
+  .header,
+  .form {
+    width: 80vw;
+    margin: auto;
+  }
 
-    .header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        margin-top: 9vw;
-        margin-bottom: 4%;
-    }
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 9vw;
+    margin-bottom: 4%;
+  }
 
-    #input-field, #add-button, #filter-field, li div{
-        display: block;
-        margin-bottom: 4vw; 
-        box-sizing: border-box;
-    }
+  #input-field,
+  #add-button,
+  #filter-field,
+  li div {
+    display: block;
+    margin-bottom: 4vw;
+    box-sizing: border-box;
+  }
 
-    #input-field, #filter-field{
-        width: 100%;
-        padding: 4vw 2vw;
-    }
+  #input-field,
+  #filter-field {
+    width: 100%;
+    padding: 4vw 2vw;
+  }
 
-    #input-field {
-        height: 10vw;
-        border: 1px solid gray;
-        border-radius: 2vw;
-        background-color: white;
-        font-size: 3.5vw;
-    }
+  #input-field {
+    height: 10vw;
+    border: 1px solid gray;
+    border-radius: 2vw;
+    background-color: white;
+    font-size: 3.5vw;
+  }
 
-    #filter-field {
-        height: 10vw;
-        outline: 0;
-        border: none;
-        border-bottom: 1px solid gray;
-        font-size: 3vw;
-    }
+  #filter-field {
+    height: 10vw;
+    outline: 0;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 3vw;
+  }
 
-    #add-button {
-        color: white;
-        background-color: black;
-        padding: 8px 20px;
-        border-radius: .5vh;
-        font-size: 3vw;
-    }
+  #add-button {
+    color: white;
+    background-color: black;
+    padding: 8px 20px;
+    border-radius: 0.5vh;
+    font-size: 3vw;
+  }
 
-    li {
-        list-style: none;
-    }
+  li {
+    list-style: none;
+  }
 
-    .item{
-        box-sizing: border-box;
-        height: 10vw;
-        padding: 3vw 2vw;
-        border: 1px gray solid;
-        border-radius: 2vw;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        font-weight: 500;
-        font-size: 3vw;
-    }
+  .item {
+    box-sizing: border-box;
+    height: 10vw;
+    padding: 3vw 2vw;
+    border: 1px gray solid;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 3vw;
+  }
 
-    .delete-button {
-        width: 4vw;
-        display: hidden;
-    }
+  .delete-button {
+    width: 4vw;
+    display: hidden;
+  }
 
-    #clear-button { 
-        border: 1px solid gray;
-        border-radius: 1vw;
-        padding: 1vw 2vw;
-        font-size: 4vw;
-        width: 80vw;
-        margin-bottom: 8vw;
-    }
+  #clear-button {
+    border: 1px solid gray;
+    border-radius: 1vw;
+    padding: 1vw 2vw;
+    font-size: 4vw;
+    width: 80vw;
+    margin-bottom: 8vw;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    body {
-        font-size: 5vw;
-        box-sizing: border-box;
-    }
+  body {
+    font-size: 5vw;
+    box-sizing: border-box;
+  }
 
-    h1 {
-        font-weight: 400;
-        font-size: 3vw;
-    }
+  h1 {
+    font-weight: 400;
+    font-size: 3vw;
+  }
 
-    .header, .form {
-        width: 50vw;
-        margin:auto;
-    }
+  .header,
+  .form {
+    width: 50vw;
+    margin: auto;
+  }
 
-    .header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        margin-top: 2vw;
-        margin-bottom: 4%;
-    }
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2vw;
+    margin-bottom: 4%;
+  }
 
-    #input-field, #add-button, #filter-field, li div{
-        display: block;
-        margin-bottom: 4vw; 
-        box-sizing: border-box;
-    }
+  #input-field,
+  #add-button,
+  #filter-field,
+  li div {
+    display: block;
+    margin-bottom: 4vw;
+    box-sizing: border-box;
+  }
 
-    #input-field, #filter-field{
-        height: 3vw;
-        border: 1px solid gray;
-        border-radius: 2vw;
-        background-color: white;
-        font-size: 1vw;
-        padding: 1vw;
-        margin:auto;
-        margin-bottom: 3vh;
-        text-align: center;
-    }
+  #input-field,
+  #filter-field {
+    height: 3vw;
+    border: 1px solid gray;
+    border-radius: 2vw;
+    background-color: white;
+    font-size: 1vw;
+    padding: 1vw;
+    margin: auto;
+    margin-bottom: 3vh;
+    text-align: center;
+  }
 
-    #add-button {
-        color: white;
-        background-color: black;
-        padding: 8px 20px;
-        border-radius: .5vh;
-        font-size: 1vw;
-        margin: auto;
-        margin-bottom: 1vw;
-    }
+  #add-button {
+    color: white;
+    background-color: black;
+    padding: 8px 20px;
+    border-radius: 0.5vh;
+    font-size: 1vw;
+    margin: auto;
+    margin-bottom: 1vw;
+  }
 
-    #filter-field {
-        outline: 0;
-        border: none;
-        border-bottom: 1px solid gray;
-        border-radius: 0;;
-        background-color: whitesmoke;
-    }
+  #filter-field {
+    outline: 0;
+    border: none;
+    border-bottom: 1px solid gray;
+    border-radius: 0;
+    background-color: whitesmoke;
+  }
 
-    li {
-        list-style: none;
-    }
+  li {
+    list-style: none;
+  }
 
-    .item{
-        box-sizing: border-box;
-        padding: 1vw 1vw;
-        border: 1px gray solid;
-        border-radius: 2vw;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        font-weight: 500;
-        font-size: 1vw;
-        width: 20vw;
-        margin:auto;
-        margin-bottom: 2vw;
-    }
+  .item {
+    box-sizing: border-box;
+    padding: 1vw 1vw;
+    border: 1px gray solid;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 1vw;
+    width: 20vw;
+    margin: auto;
+    margin-bottom: 2vw;
+  }
 
-    .delete-button {
-        width: 1vw;
-        display: hidden;
-    }
+  .delete-button {
+    width: 1vw;
+    display: hidden;
+  }
 
-    #clear-button { 
-        border: 1px solid gray;
-        border-radius: 1vw;
-        padding: 1vw 2vw;
-        font-size: 1vw;
-        width: 20vw;
-        margin:auto;
-        margin-bottom: 2vw;
-    }
+  #clear-button {
+    border: 1px solid gray;
+    border-radius: 1vw;
+    padding: 1vw 2vw;
+    font-size: 1vw;
+    width: 20vw;
+    margin: auto;
+    margin-bottom: 2vw;
+  }
+}
+
+.hidden {
+  display: none;
 }
